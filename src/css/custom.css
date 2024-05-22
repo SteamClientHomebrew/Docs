@@ -1,0 +1,192 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+@font-face {
+  font-family: 'Geist';
+  src: url("../../static/fonts/GeistVF.woff2") format("woff2");
+}
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --ifm-heading-font-family: 'Geist';
+  --ifm-font-family-base: 'Geist';
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #6a96d0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --doc-sidebar-width: 30%;
+}
+
+@media (min-width: 997px) {
+  .theme-doc-sidebar-container {
+      display: flex !important;
+      justify-content: flex-end;
+  }
+}
+
+html {
+  background-color: black !important;
+}
+
+nav.navbar.navbar--fixed-top {
+  background: black !important;
+  border-bottom: 1px solid rgb(24, 24, 24) !important;
+}
+
+nav.menu.thin-scrollbar.menu_node_modules-\@docusaurus-theme-classic-lib-theme-DocSidebar-Desktop-Content-styles-module {
+  /* border-right: 1px solid rgb(24, 24, 24) !important; */
+}
+
+aside.theme-doc-sidebar-container.docSidebarContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocRoot-Layout-Sidebar-styles-module {
+  border-right: 1px solid rgb(24, 24, 24) !important;
+}
+
+.navbar__search-input {
+  background: #1a1a1a !important;
+  border: 1px solid #ffffff24 !important;
+  border-radius: 6px !important;
+}
+
+a.card.padding--lg.cardContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocCard-styles-module {
+  border: 1px solid #333 !important;
+  background: #111 !important;
+}
+
+footer.footer.footer--dark {
+  background: black !important;
+  border-top: 1px solid rgb(24, 24, 24) !important;
+}
+
+.docRoot_node_modules-\@docusaurus-theme-classic-lib-theme-DocRoot-Layout-styles-module {
+  max-width: 1400px !important;
+}
+
+.docsWrapper_node_modules-\@docusaurus-theme-classic-lib-theme-DocRoot-Layout-styles-module {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+li.theme-doc-sidebar-item-link.theme-doc-sidebar-item-link-level-1.menu__list-item {
+  /* background: transparent !important; */
+}
+
+.menu__link:not(.menu__link--active) {
+  background: none !important;
+}
+
+a.menu__link.menu__link--active {
+  background: none !important;
+}
+
+nav.navbar.navbar--fixed-top {
+  display: flex !important;
+  justify-content: center !important;
+  height: 64px !important;
+}
+
+.navbar__inner {
+  max-width: 1480px !important;
+  padding: 0 128px !important;
+}
+
+.navbar__logo {
+  height: 36px !important;
+  margin-right: 15px;
+}
+
+b.navbar__title {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  color: rgb(191, 196, 201) !important;
+}
+
+a.navbar__item.navbar__link {
+  font-size: 14px !important;
+  color: #888 !important;
+}
+
+.toggle_node_modules-\@docusaurus-theme-classic-lib-theme-ColorModeToggle-styles-module {
+  display: none !important;
+}
+
+.pagination-nav__link {
+  border: 1px solid rgb(24, 24, 24) !important;
+}
+
+.pagination-nav__link {
+  border: 1px solid rgb(24, 24, 24) !important;
+}
+/* 
+.docRoot_node_modules-\@docusaurus-theme-classic-lib-theme-DocRoot-Layout-styles-module {
+  min-height: calc(100vh - 64px) !important;
+} */
+
+.codeBlockTitle_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module {
+  background: #000;
+  border-bottom: 1px solid #2e2e2e !important;
+}
+
+.codeBlockContainer_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Container-styles-module.theme-code-block {
+  border: 1px solid #2e2e2e !important;
+}
+
+.codeBlockContent_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module {
+  /* background: #0a0a0a !important; */
+}
+
+pre.prism-code.codeBlock_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module.thin-scrollbar {
+  background: #0a0a0a !important;
+}
+
+a.menu__link {
+  font-size: 14px !important;
+}
+
+table th, table td {
+  border: 1px solid #1a1a1a;
+}
+
+table tr:nth-child(2n) {
+  background: unset !important;
+}
+
+table {
+  width: 100% !important;
+}
+
+table thead tr {
+  border: unset !important;
+}
+
+* {
+  scrollbar-color: #2b2b2b #161616;
+}
+
+a.footer__link-item {
+  font-size: 14px !important;
+  color: #95989d !important;
+}
+
+.footer__copyright {
+  display: none !important;
+}
