@@ -9,6 +9,25 @@
   src: url("../../static/fonts/GeistVF.woff2") format("woff2");
 }
 
+:root {
+  --bg1: #040405;
+  --bg3: #14151b;
+  --bg4: #20212b;
+  --bg2: #0c0d10;
+  --bg2-alt: #101116;
+  --bg3-alt: #191a21;
+  --accent: #4f3ac1;
+  --accent-hover: #2f5b9d;
+  --accent-faded: rgba(58,113,193,.4);
+  --danger: #c13a3a;
+  --danger-hover: #992e2e;
+  --danger-faded: rgba(193,58,58,.4);
+  --text-light: #f1f1f1;
+  --text-normal: #bfc4c9;
+  --text-muted: #95989d;
+  --text-link: #5a88ce;
+}
+
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #2e8555;
@@ -189,4 +208,176 @@ a.footer__link-item {
 
 .footer__copyright {
   display: none !important;
+}
+
+.page-section .page-section-inner {
+  max-width: 1480px;
+  width: 100%;
+  padding: 0 128px;
+  margin: 0 auto;
+}
+
+#footer-top {
+  max-width: 1200px;
+  margin: 0 auto 48px;
+}
+.flex-container {
+  display: flex;
+}
+
+.footer-column {
+  flex-grow: 1;
+}
+
+.footer-logo-wrap {
+  display: block;
+  width: fit-content;
+  width: -moz-fit-content;
+}
+
+h3.footer-column-header {
+  font-size: 14px !important;
+}
+.footer-column-header {
+  color: var(--text-light);
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+a.footer-column-item {
+  font-size: 14px !important;
+}
+.footer-column-item {
+  display: block;
+  color: #95989d;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 4px;
+  transition: .15s ease;
+  width: fit-content;
+  width: -moz-fit-content;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+.align-center {
+  align-items: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.flex-container {
+  display: flex;
+}
+
+div#footer-copyright-container {
+  display: block;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+
+#footer-social-icons {
+  gap: 12px;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.justify-center {
+  justify-content: center;
+}
+.flex-container {
+  display: flex;
+}
+
+.social-icon {
+  border-radius: 3px;
+  color: var(--text-normal);
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .15s ease;
+}
+
+.footer-copyright.text-center {
+  text-align: left;
+}
+.footer-copyright.text-center {
+  font-size: 14px;
+}
+.text-center {
+  text-align: center;
+}
+.footer-copyright {
+  color: var(--text-muted);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer-disclaimer {
+  color: #5d5d5d;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.anchor1 {
+  color: var(--text-link) !important;
+  font-weight: 500 !important;
+  text-decoration: none;
+}
+
+.hide-desktop {
+  display: none!important
+}
+
+.footer-logo {
+  border-radius: 3px;
+  height: 72px;
+  width: auto;
+  margin-bottom: 10px;
+}
+
+.page-section-inner {
+  text-align: left !important;
+}
+
+.footer-column:last-child {
+  flex-grow: 0;
+}
+
+.footer__link-item:hover {
+  color: unset !important;
+}
+
+.page-section .page-section-inner {
+  max-width: 1480px;
+  width: 100%;
+  padding: 0 128px;
+  margin: 0 auto;
+}
+
+.footer .container.container-fluid {
+  width: unset !important;
+  max-width: unset !important;
+  padding: unset !important;
+}
+
+footer#section-footer {
+  background: #000 !important;
+  /* border-top: 1px solid #181818; */
+}
+#section-footer {
+  margin-top: auto;
+  position: relative;
+}
+.page-section {
+  padding: 48px 0;
+}
+
+footer.footer.footer--dark {
+  padding: unset !important;
 }
