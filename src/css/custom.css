@@ -26,34 +26,30 @@
   --text-normal: #bfc4c9;
   --text-muted: #95989d;
   --text-link: #5a88ce;
-}
-
-/* You can override the default Infima variables here. */
-:root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --ifm-heading-font-family: 'Geist';
   --ifm-font-family-base: 'Geist';
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-font-color-base: white !important;
+  --ifm-heading-color: white !important;
+  /* <a> link color */
+  --ifm-color-emphasis-800: rgb(158, 158, 158) !important;
+  /* <a> link color hover*/
+  --ifm-color-emphasis-700: rgb(185, 185, 185) !important;
+  --ifm-toc-link-color: rgb(174, 174, 174) !important;
+  --paragraph-color: #adadad;
+  --ifm-navbar-search-input-placeholder-color: grey !important;
+  --ifm-navbar-search-input-background-color: #151515 !important;
+  --ifm-color-emphasis-500: #151515 !important;
+  --code-bg-color: #151515 !important;
+  --ifm-color-info-contrast-background: #0f0f0f !important;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #6a96d0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-  --doc-sidebar-width: 30%;
+code {
+  background-color: var(--code-bg-color) !important;
+}
+
+ol, p {
+  color: var(--paragraph-color) !important;
 }
 
 @media (min-width: 997px) {
