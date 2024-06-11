@@ -32,6 +32,10 @@ g_PopupManager.m_rgPopupCreatedCallbacks.pop();
 
 ## Readable class names
 
-The class names got completely obfuscated [one day](https://github.com/SteamDatabase/SteamTracking/commit/a0f82423f4c422f616253d5825fd8bf453367f3a), so you may use [this gist](https://gist.github.com/ricewind012/3e74b297d28d88af3c84dee028f9cc46) to get readable class names. Copy & paste this in the SharedJSContext console and reopen windows you wish to know the actual class names of.
+The class names got completely obfuscated [one day](https://github.com/SteamDatabase/SteamTracking/commit/a0f82423f4c422f616253d5825fd8bf453367f3a). Copy & paste the code on the following page in the SharedJSContext console and focus the window you wish to know the actual class names of: https://gist.github.com/ricewind012/3e74b297d28d88af3c84dee028f9cc46
 
-Note that you can only use them to make comments in your theme, but not use it in your code, because they are applied only for the current Steam session. This also slows down window creation and functionality significantly, so you will have to restart Steam in order to revert this.
+This may take a little bit of time to fully apply, so it's fine if it doesn't respond for some time.
+
+This works for other Steam pages, too, like the points store, but you have to paste the code in its own console.
+
+Note that you can only use this to make comments in your theme, but not use it in your code, because they are applied only for the current session.
