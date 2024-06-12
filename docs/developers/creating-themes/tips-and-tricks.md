@@ -34,7 +34,13 @@ g_PopupManager.m_rgPopupCreatedCallbacks.pop();
 
 The class names got completely obfuscated [one day](https://github.com/SteamDatabase/SteamTracking/commit/a0f82423f4c422f616253d5825fd8bf453367f3a). Copy & paste the code on the following page in the SharedJSContext console and focus the window you wish to know the actual class names of: https://gist.github.com/ricewind012/3e74b297d28d88af3c84dee028f9cc46
 
-This may take a little bit of time to fully apply, so it's fine if it doesn't respond for some time.
+Then copy & paste the following every time you want to do it:
+
+```js
+pClassDeminifier.DoTheThing();
+```
+
+This may take a little bit of time to fully apply, so it's fine if it doesn't respond for some time. It also does not work on elements that may appear after applying, so you will have to redo it again.
 
 This works for other Steam pages, too, like the points store, but you have to paste the code in its own console.
 
