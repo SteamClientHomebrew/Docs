@@ -1,5 +1,8 @@
 # version()
-Gets the current version of millennium, most likely in [Semantic Versioning](https://semver.org/) format, but its not garuntee
+Gets the current version of millennium
+
+The version string will always be in the Semantic Versioning format `major.minor.patch`.
+Read more about it [here](https://semver.org/).
 
 - type `method`
 - returns `str`

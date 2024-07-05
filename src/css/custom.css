@@ -59,6 +59,21 @@ ol, p {
   }
 }
 
+.card {
+  background: #111 !important;
+  /* border: 1px solid #232323; */
+  box-shadow: unset !important;
+  border: 1px solid #333 !important;
+}
+
+aside.theme-doc-sidebar-container {
+  border-right: 1px solid #333 !important;
+}
+
+.table-of-contents__left-border {
+  border-left: 1px solid #333 !important;
+}
+
 html {
   background-color: black !important;
 }
@@ -178,7 +193,7 @@ a.menu__link {
 }
 
 table th, table td {
-  border: 1px solid #1a1a1a;
+  border: 1px solid #1a1a1a !important;
 }
 
 table tr:nth-child(2n) {
@@ -194,7 +209,7 @@ table thead tr {
 }
 
 * {
-  scrollbar-color: #2b2b2b #161616;
+  scrollbar-color: #2b2b2b #161616 !important;
 }
 
 a.footer__link-item {
@@ -235,10 +250,10 @@ h3.footer-column-header {
   font-size: 14px !important;
 }
 .footer-column-header {
-  color: var(--text-light);
-  margin-bottom: 5px;
-  font-size: 20px;
-  font-weight: 700;
+  color: var(--text-light) !important;
+  margin-bottom: 5px !important;
+  font-size: 20px !important;
+  font-weight: 700 !important;
 }
 
 a.footer-column-item {
