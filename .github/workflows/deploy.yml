@@ -26,4 +26,5 @@ jobs:
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_STEAM_BREW }}
           expires: 3d
           projectId: steam-brew
+          # fix the channel id to be unique for each PR
           channelId: 'pr-${{ github.event.number }}-${{ github.event.pull_request.head.ref }}'
