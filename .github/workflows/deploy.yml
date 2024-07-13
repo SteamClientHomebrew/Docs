@@ -20,11 +20,7 @@ jobs:
       - name: Setup pnpm
         run: npm install -g pnpm
       - run: pnpm install && pnpm run build
-      - uses: FirebaseExtended/action-hosting-deploy@v0
-        with:
-          repoToken: ${{ secrets.GITHUB_TOKEN }}
-          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_STEAM_BREW }}
-          expires: 3d
-          projectId: steam-brew
-          # fix the channel id to be unique for each PR
-          channelId: 'pr-${{ github.event.number }}-${{ github.event.pull_request.head.ref }}'
+      - name: Deploy to Firebase
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+        run: pnpm install -g firebase-tools && firebase deploy --only hosting --token $FIREBASE_TOKEN
