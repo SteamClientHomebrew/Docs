@@ -15,7 +15,7 @@ const config = {
   baseUrl: '/',
   organizationName: 'SteamClientHomebrew',
   projectName: 'Millennium', 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: "log",
   onBrokenMarkdownLinks: 'warn',
 
   i18n: {
@@ -58,6 +58,11 @@ const config = {
     ({
       // Replace with your project's social card
       image: 'img/icon.png',
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: true,
+        respectPrefersColorScheme: true,
+      },
       navbar: {
         title: 'Steam Homebrew.',
         logo: {
