@@ -23,4 +23,6 @@ jobs:
       - name: Deploy to Firebase
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-        run: pnpm install -g firebase-tools && firebase deploy --only hosting --token $FIREBASE_TOKEN
+        run: |
+          pnpm setup
+          pnpm install -g firebase-tools && firebase deploy --only hosting --token $FIREBASE_TOKEN
