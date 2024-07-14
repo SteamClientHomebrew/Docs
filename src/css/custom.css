@@ -61,10 +61,24 @@ ol, p {
 }
 
 .card {
-  background: #111 !important;
+  background: #000 !important;
   /* border: 1px solid #232323; */
   box-shadow: unset !important;
   border: 1px solid #333 !important;
+  padding: 20px !important;
+}
+
+.card:hover {
+  border: 1px solid #919191 !important;
+}
+
+.pagination-nav__link {
+  /* border: 1px solid #333 !important; */
+  border: unset !important;
+}
+
+.pagination-nav__link:hover {
+  /* border: 1px solid #919191 !important; */
 }
 
 aside.theme-doc-sidebar-container {
@@ -158,14 +172,6 @@ a.navbar__item.navbar__link {
 
 .toggle_node_modules-\@docusaurus-theme-classic-lib-theme-ColorModeToggle-styles-module {
   display: none !important;
-}
-
-.pagination-nav__link {
-  border: 1px solid rgb(24, 24, 24) !important;
-}
-
-.pagination-nav__link {
-  border: 1px solid rgb(24, 24, 24) !important;
 }
 /* 
 .docRoot_node_modules-\@docusaurus-theme-classic-lib-theme-DocRoot-Layout-styles-module {
@@ -393,3 +399,7 @@ footer#section-footer {
 footer.footer.footer--dark {
   padding: unset !important;
 }
+
+div#__docusaurus_skipToContent_fallback {
+  min-height: calc(100vh - 64px) !important;
+} 
