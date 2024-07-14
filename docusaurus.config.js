@@ -71,7 +71,7 @@ const config = {
         },
         items: [
           {
-            href: 'https://github.com/SteamClientHomebrew/Docs',
+            href: 'https://github.com/SteamClientHomebrew/Millennium',
             label: 'GitHub',
             position: 'right',
           },

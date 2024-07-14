@@ -29,6 +29,7 @@
   --ifm-code-font-size: 95%;
   --ifm-heading-font-family: 'Geist';
   --ifm-font-family-base: 'Geist';
+  --ifm-color-primary: #c496ff !important;
   --ifm-font-color-base: white !important;
   --ifm-heading-color: white !important;
   /* <a> link color */

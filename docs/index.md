@@ -1,6 +1,7 @@
 ---
 hide_table_of_contents: false
 displayed_sidebar: homeSidebar
+sidebar_collapsed: true
 ---
 
 # Millennium Documentation
