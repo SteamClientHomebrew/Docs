@@ -59,7 +59,7 @@ module.exports = {
               slug: '/developers/plugins',
             },
             items: [
-              'developers/intro',
+              'developers/plugins/learn',
               {
                 type: 'category',
                 label: 'Python Reference',
