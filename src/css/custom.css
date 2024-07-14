@@ -81,12 +81,12 @@ ol, p {
   /* border: 1px solid #919191 !important; */
 }
 
-aside.theme-doc-sidebar-container {
-  border-right: 1px solid #333 !important;
+.theme-doc-sidebar-container {
+  border-right: 1px solid #181818 !important;
 }
 
 .table-of-contents__left-border {
-  border-left: 1px solid #333 !important;
+  border-left: 1px solid #181818 !important;
 }
 
 html {
