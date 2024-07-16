@@ -1,5 +1,7 @@
 # Tips & tricks
 
+Things to make theming much easier.
+
 ## Hard to style windows
 
 There are windows that disappear on unfocus or after some action, copy & paste the following in the SharedJSContext console and open them again:
