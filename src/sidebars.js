@@ -3,9 +3,10 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 module.exports = {
     homeSidebar: [
+      "about",
       {
         type: 'category',
-        label: 'Getting Started',
+        label: 'User Documentation',
         collapsed: false,
         link: {
           type: 'generated-index',

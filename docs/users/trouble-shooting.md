@@ -5,27 +5,26 @@ description: When things don't go as expected.
 
 # Troubleshooting
 
-- #### Error getting webSocketDebuggerUrl: 
-  Another program is using Port 8080, run this command in CMD to find out what it is and terminate it
- 
-  `for /f "tokens=5" %a in ('netstat -aon ^| findstr 8080') do wmic process where processId=%a get ExecutablePath`
+- #### Issues with another app running on port 8080: 
+  Steam has been hardcoded to use port 8080, meaning we can't change it. This means you'll either have to close/uninstall the conflicting app, or remove Millennium.
 
-- #### Failed to install Millennium 
-  Install the Millennium Binaries manually you can get them [here](https://github.com/ShadowMonster99/millennium-steam-binaries/releases) Download both 
-  files and copy them to this directory/folder 
-
-  `C:\Program Files (x86)\Steam`
+  You can locate the conflicting app by running the following command in PowerShell
+  ```powershell
+  (Get-Item -Path (Get-Process -Id (Get-NetTCPConnection -LocalPort 8080 -State Listen).OwningProcess).Path).FullName
+  ```
 
 - #### Installed, but not showing in Settings: 
-  Please make sure you are not on any Beta branches of steam; this includes the Steam Beta Update & 
-  Steam Families Beta. you can find out more [here](https://github.com/SteamClientHomebrew/Millennium#you-must-use-steam-stable-until-further-notice) 
+
+  Start steam with `-dev`, this will open Millennium in developer mode. Here you'll find more verbose logs on specific issues within steam. 
+  If you don't find any errors, The issue might be caused by Millennium's frontend. To check, go to http://localhost:8080 with steam open, from there navigate
+  to `SharedJSContext` and select it. When that new page loads, on the panel on the right side, click console on the top right. 
+
   
-  (**this notice will be removed after Millenniums next update**)
+  If you can't solve the error by yourself, which might be the case, report it as a bug on the [GitHub repository](https://github.com/SteamClientHomebrew/Millennium/issues/new?assignees=&labels=bug&projects=&template=BUG-REPORT.yml&title=%5BBug%5D)
 
-- #### Entry Point Not Found Error. 
-  Windows 7 & 8.1 are no longer supported please update to windows 10 or 11
+  **Example:**
 
-- #### Java Script Error
-  Install the Millennium Binaries manually you can get them [here](https://github.com/ShadowMonster99/millennium-steam-binaries/releases) download both files and copy them to this directory/folder
+  ![alt text](sharedjscontext.png)
 
-  `C:\Program Files (x86)\Steam`
+- #### DLL Error / Windows Dependency Error Message Boxes
+  Ensure you're running Windows 10 or greater, support for Windows 7 and 8 has been dropped. 
