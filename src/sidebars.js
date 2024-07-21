@@ -45,6 +45,7 @@ module.exports = {
             items: [
               'developers/themes/getting-started',
               'developers/themes/making-themes',
+              'developers/themes/dynamic-patching',
               'developers/themes/tips-and-tricks',
               'developers/themes/publishing',
             ],
