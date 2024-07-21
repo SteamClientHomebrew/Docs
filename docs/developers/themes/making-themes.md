@@ -50,8 +50,8 @@ Here's an [example `skin.json`](https://github.com/SteamClientHomebrew/ThemeTemp
 
 |Field|Required|Description|
 |-----|:------:|-----------|
-|owner|&#x2705;|the owner of the github repository. Ex: https://github.com/ShadowMonster99/Simply-Dark/ -> Simply-Dark |
-|repo_name|&#x2705;|the account name of the repository under the owners account. Ex: https://github.com/ShadowMonster99/Simply-Dark/ -> ShadowMonster99|
+|owner|&#x2705;|the account name of the repository under the owners account. Ex: https://github.com/ShadowMonster99/Simply-Dark/ -> ShadowMonster99|
+|repo_name|&#x2705;|the owner of the github repository. Ex: https://github.com/ShadowMonster99/Simply-Dark/ -> Simply-Dark |
 
 ### Discord Property Node
 
