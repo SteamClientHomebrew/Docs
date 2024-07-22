@@ -11,7 +11,7 @@ To uninstall Millennium on windows, we use a PowerShell installer script. To run
 The uninstaller lets you uninstall Millennium components in modules, and everything it will/ever has put on the disk will be caught by the uninstaller. 
 
 ```powershell
-iwr -useb "https://steambrew.app/install.ps1" | iex
+iwr -useb "https://steambrew.app/uninstall.ps1" | iex
 ```
 
 :::info
