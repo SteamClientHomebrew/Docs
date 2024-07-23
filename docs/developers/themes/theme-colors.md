@@ -17,7 +17,7 @@ And thats it! The rest will be handled for you automatically. the Colors will be
 
 * ### Supported Color Formats
   * Raw RGB channels 
-  * Raw RBGA channels
+  * Raw RGBA channels
   * RGB channels
   * RGBA channels
   * Hex 
