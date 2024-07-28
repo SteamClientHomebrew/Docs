@@ -9,7 +9,7 @@ Dynamic patching is a feature that allows themes to conditionally inject Css/Js 
 |Field|Type|Description|
 |-----|:------:|-----------|
 |default|`Any`|The preselected default option from `values`|
-|description|`String`|A basic description of the what the config does|
+|description|`String`|A basic description of the what the config does. Supports [BB code][guide]|
 |values|`Object`|An object containing keys `yes`/`no` for checkbox config, and other string values for combobox|
 |`values` item|`Object`|Contains a `TargetCss` and/or a `TargetJs` object|
 |`TargetJs` & `TargetCss`|`Object`|Contains an `affects` key, and a `src` key|
@@ -76,3 +76,5 @@ Note you must remove all comments from the following JSON, as they are not valid
 },
 "Patches": ...
 ```
+
+[guide]: https://steamcommunity.com/sharedfiles/filedetails/?id=2807121939
