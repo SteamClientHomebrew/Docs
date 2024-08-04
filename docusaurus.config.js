@@ -156,7 +156,7 @@ const config = {
       prism: {
         // theme: prismThemes.github,
         darkTheme: prismThemes.oneDark,
-        additionalLanguages: ['powershell', 'json']
+        additionalLanguages: ['powershell', 'json', 'bash']
       },
     }),
 };
