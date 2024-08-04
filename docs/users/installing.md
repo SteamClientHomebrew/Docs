@@ -26,6 +26,10 @@ Start by downloading the Millennium's Windows assets from [this repository](http
 
 ## Linux
 
+:::warning
+Millennium on linux is mostly uncharted territory. There is absolutely no guarantee that Millennium will work OOB/at all. Proper support is coming, but its not quite here just yet. If you face any issues, report them on the repository, but do not expect a immediate fix. 
+:::
+
 ### Automatic
 **Shell (pre-built binary)**
 
