@@ -39,6 +39,18 @@ This installer is entirely open source and we encourage the community audit the 
 curl -fsSL "https://raw.githubusercontent.com/SteamClientHomebrew/Millennium/main/scripts/install.sh" | sh
 ```
 
+You can then run Steam with Millennium from `~/.millennium/start.sh`
+
 ### Manual
 
-Start by downloading the Millennium's Linux assets from [this repository](https://github.com/SteamClientHomebrew/Millennium/releases/latest) under the name ` millennium-v0.0.0-linux-x86_64.tar.gz `. Simply put all files into your Steam directory, which should be `~/.local/share/Steam/`
+Start by downloading the Millennium's Linux assets from [this repository](https://github.com/SteamClientHomebrew/Millennium/releases/latest) under the name ` millennium-v0.0.0-linux-x86_64.tar.gz `. Extract and put all files in `~/.millennium/`. Then make the following files executable 
+* `~/.millennium/ext/data/cache/bin/python3.11`
+* `~/.millennium/ext/bin/millennium`
+* `~/.millennium/start.sh`
+
+by running `chmod +x path/to/file`
+
+You can then run Steam with Millennium from `~/.millennium/start.sh`
+
+Optionally, you can also add `~/.millennium/ext/bin/` to `$PATH` to be able to globally run Millenniums config CLI, although you can alternatively just configure Millennium from Steam's UI (**Steam -> Settings -> Plugins & Updates & Themes**) 
+
