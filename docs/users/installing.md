@@ -44,7 +44,7 @@ You can then run Steam with Millennium from `~/.millennium/start.sh`
 ### Manual
 
 Start by downloading the Millennium's Linux assets from [this repository](https://github.com/SteamClientHomebrew/Millennium/releases/latest) under the name ` millennium-v0.0.0-linux-x86_64.tar.gz `. Extract and put all files in `~/.millennium/`. Then make the following files executable 
-* `~/.millennium/ext/data/cache/bin/python3.11`
+* `~/.millennium/ext/data/cache/bin/python3.11` (Used to manage plugin packages; is not daemon)
 * `~/.millennium/ext/bin/millennium`
 * `~/.millennium/start.sh`
 
